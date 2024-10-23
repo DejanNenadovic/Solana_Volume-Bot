@@ -429,9 +429,7 @@ export const getMainMenuMessage = async (
       addr: session.addr,
     });
   }
-  const user: any = await database.selectUser({ chatId: sessionId });
-  const depositWallet: any = utils.getWalletFromPrivateKey(user.depositWallet);
-  const SOLBalance: number = await utils.getWalletSOLBalance(depositWallet);
+ 
 
   const MESSAGE = `✨✨✨✨✨ Welcome to ${process.env.BOT_TITLE} ✨✨✨✨✨
 
