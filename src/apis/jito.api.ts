@@ -44,7 +44,7 @@ export const createAndSendBundleTransaction = async (
 
     searcher.onBundleResult(
       async (bundleResult: any) => {
-        console.log(bundleResult);
+        // console.log(bundleResult);
 
         if (bundleResult.rejected) {
           try {
